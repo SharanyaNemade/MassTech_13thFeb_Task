@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Department Management</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -44,6 +44,8 @@
                 <p>
                     Status&nbsp;&nbsp;&nbsp;
             <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem>Active</asp:ListItem>
+                <asp:ListItem>Inactive</asp:ListItem>
             </asp:DropDownList>
             
             <br />
@@ -60,7 +62,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primarySave changes</button>
+                <button type="button" class="btn btn-primary"> Save changes</button>
             </div>
         </div>
     </div>

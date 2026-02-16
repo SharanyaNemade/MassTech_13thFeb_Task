@@ -49,7 +49,9 @@ namespace Task
             GridView1.DataBind();
         }
 
-        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+
+
+        protected void GridView1_RowDeleting1(object sender, GridViewDeleteEventArgs e)
         {
             Label lbl = (Label)GridView1.Rows[e.RowIndex].FindControl("Label1");
             int id = int.Parse(lbl.Text);
@@ -59,7 +61,5 @@ namespace Task
             Response.Write("<script>alert('Emp Deleted Success')</scripts>");
             FetchEmpList();
         }
-
-
     }
 }

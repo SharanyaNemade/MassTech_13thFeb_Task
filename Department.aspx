@@ -60,7 +60,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primarySave changes</button>
             </div>
         </div>
     </div>
@@ -74,7 +74,8 @@
         <!--    GRID VIEW  -->
 
 
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+<asp:GridView ID="GridView1"  runat="server" AutoGenerateColumns="False" CssClass="table table-bordered table-hover" OnRowDeleting="GridView1_RowDeleting1">
+
 
 
                 <Columns>
